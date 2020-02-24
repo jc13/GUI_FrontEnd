@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "VTS To Do API";
+}
+
+    <div class="row">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Results</h1>
+                <p id="result"></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h2>Input To Do List</h2>
+            <select name="appUser" id="AppUser" class="form-control">
+                <option value="Admin">Admin</option>
+                <option value="Brian">Brian</option>
+                <option value="Marry">Marry</option>
+                <option value="Victor">Victor</option>
+            </select>
+            <input type="text" name="id" id="id" class="form-control" placeholder="Id">
+            <input type="text" name="title" id="title" class="form-control" placeholder="Title of To Do List">
+            <input type="text" name="author" id="author" class="form-control" placeholder="Author">
+
+
+        </div>
+        <div class="col-md-6">
+            <h2>Requirements</h2>
+            <table class="table table-striped table-responsive">
+                <thead>
+                    <tr><th colspan="2"><h3>ToDoList</h3></th></tr>
+                    <tr><th>Action</th><th>Implementation</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Create To Do List</td><td><button type="button" id="AddToDoList" class="btn btn-default"> Create To Do List</button></td></tr>
+                    <tr><td>Retrieve all lists associated with user</td><td><button type="button" id="GetAll" class="btn btn-default">Get All To Do Lists</button></td></tr>
+                    <tr><td>Update To Do List</td><td><button type="button" id="UpdateToDoList" class="btn btn-default">Update To Do List</button></td></tr>
+                    <tr><td>Delete To Do List</td><td><button type="button" id="DeleteToDoList" class="btn btn-default">Delete To Do List</button></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-md-4">
+            <h2>Input To Do Item</h2>
+            <input type="text" name="ItemId" id="ItemId" class="form-control" placeholder="To Do Item Id">
+            <input type="text" name="ToDoStep" id="ToDoStep" class="form-control" placeholder="To Do Step">
+            <input type="text" name="Description" id="Description" class="form-control" placeholder="Description">
+            <input type="text" name="Priority" id="Priority" class="form-control" placeholder="Priority: 1, 2 or 3">
+            <input type="text" name="Completed" id="Completed" class="form-control" placeholder="Completed? (true or false)">
+        </div>
+
+        <div class="col-md-6">
+            <table class="table table-striped table-responsive">
+                <thead>
+                    <tr><th colspan="2"><h3>ToDoListItem</h3></th></tr>
+                    <tr><th>Action</th><th>Implementation</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Add To Individual List</td><td><button type="button" id="AddToDoItem" class="btn btn-default">Add To Do Item</button></td></tr>
+                    <tr><td>Remove from Individual List</td><td><button type="button" id="DeleteToDoItem" class="btn btn-default">Delete Item from a To Do List</button></td></tr>
+                    <tr><td>Update To Do Item</td><td><button type="button" id="UpdateToDoItem" class="btn btn-default">Update To Do List</button></td></tr>
+                    <tr><td>Mark To Do Item as Completed</td><td><button type="button" id="ToDoItemCompleted" class="btn btn-default">Mark To Do Item as Completed</button></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+    
